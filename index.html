@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Carousel Example</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+    </style>
+    <link rel="shortcut icon" href="img/logodark.png" type="image/x-icon" />
+    <!-- {{-- Bootstrap CSS --}} -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- {{-- AOS --}} -->
+    <link href="css/aos.css" rel="stylesheet" />
+    <!-- {{-- Swiper --}} -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top transparant"
+        id="navbar"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="" class="nav-logo" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto w-100 justify-content-center">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div
+          id="myCarousel"
+          class="carousel slide mb-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="img/garam1.jpg"
+                class="d-block w-100 img-fluid"
+                alt="Slide 1"
+              />
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1 class="text-white carousel-header">
+                    Experience the Majestic Beauty of Mount Bromo
+                  </h1>
+                  <p class="opacity-75">
+                    Mount Bromo, Area Gunung Bromo, Podokoyo, Pasuruan, East
+                    Java, Indonesia
+                  </p>
+                  <!-- {{--
+                  <p>
+                    <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+                  </p>
+                  --}} -->
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="img/keripik2.jpg"
+                class="d-block w-100 img-fluid"
+                alt="Slide 2"
+              />
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1 class="text-white carousel-header">
+                    Experience the Majestic Beauty of Mount Bromo
+                  </h1>
+                  <p class="opacity-75">
+                    Mount Bromo, Area Gunung Bromo, Podokoyo, Pasuruan, East
+                    Java, Indonesia
+                  </p>
+                  <!-- {{--
+                  <p>
+                    <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+                  </p>
+                  --}} -->
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/perabot.jpg"
+                class="d-block w-100 img-fluid"
+                alt="Slide 3"
+              />
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1 class="text-white carousel-header">
+                    Experience the Majestic Beauty of Mount Bromo
+                  </h1>
+                  <p class="opacity-75">
+                    Mount Bromo, Area Gunung Bromo, Podokoyo, Pasuruan, East
+                    Java, Indonesia
+                  </p>
+                  <!-- {{--
+                  <p>
+                    <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+                  </p>
+                  --}} -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Tentang Desa -->
+      <section id="desc" class="pt-5">
+        <div class="container py-5">
+          <div
+            class="d-flex align-items-center justify-content-between gap-2 gap-xl-5 flex-column flex-md-row"
+          >
+            <div
+              class="col-md-5"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h1 class="section-title fw-semibold">Sekilas Tentang Desa</h1>
+              <p class="section-text mt-5">
+                Embark on a journey to the most breathtaking destinations at
+                unbeatable prices. From serene beaches to majestic mountains, we
+                offer special discounts on all our tours. Simply choose your
+                dream destination, and we'll take care of the rest. Secure your
+                spot now and let the adventure begin!
+              </p>
+            </div>
+            <div class="">
+              <div class="d-flex gap-3 align-items-center">
+                <div
+                  class="img-overlay"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
+                  <img src="img/img1.jpg" class="desc-img1" alt="" />
+                </div>
+                <div
+                  class="img-overlay"
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                >
+                  <img src="img/img2.jpg" class="desc-img2" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Swipper -->
+      <section id="discover" class="pt-5">
+        <div class="container mt-5 pt-5">
+          <h1
+            class="section-title fw-semibold text-center mb-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Jelajahi Berbagai Macam Produk UMKM <br />
+            Disini
+          </h1>
+
+          <!-- Swiper Konten -->
+          <div
+            class="discover__container max-w-lg swiper-container"
+            data-aos="zoom-out"
+            data-aos-duration="1500"
+          >
+            <div class="swiper-wrapper">
+              <div class="discover__card swiper-slide">
+                <img src="img/garam1.jpg" alt="" class="discover__img" />
+                <div class="discover__data">
+                  <h2 class="discover__title text-white"></h2>
+                  <span class="discover__description text-white"></span>
+                </div>
+              </div>
+              <div class="discover__card swiper-slide">
+                <img src="img/keripik1.jpg" alt="" class="discover__img" />
+                <div class="discover__data">
+                  <h2 class="discover__title text-white"></h2>
+                  <span class="discover__description text-white"></span>
+                </div>
+              </div>
+              <div class="discover__card swiper-slide">
+                <img src="img/perabot.jpg" alt="" class="discover__img" />
+                <div class="discover__data">
+                  <h2 class="discover__title text-white"></h2>
+                  <span class="discover__description text-white"></span>
+                </div>
+              </div>
+              <div class="discover__card swiper-slide">
+                <img src="img/arbanat1.jpg" alt="" class="discover__img" />
+                <div class="discover__data">
+                  <h2 class="discover__title text-white"></h2>
+                  <span class="discover__description text-white"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Swipper -->
+
+      <!-- {{-- Journey Plan --}} -->
+      <!-- <section id="journey-plan" class="pt-5">
+        <div class="container pt-5">
+          <h1
+            class="mt-5 section-title fw-semibold text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Let's see <br />
+            Our Plan Journey
+          </h1>
+          <div
+            class="row row-cols-1 row-cols-md-3 mb-3 mt-5 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="plan-card" style="background-color: aqua">
+                  <div class="card border-0 rounded-0 text-bg-dark">
+                    <img src="img/hero1.jpg" class="card-img" alt="..." />
+                    <div class="card-img-overlay d-flex align-items-end">
+                      <div class="text-start">
+                        <h2 class="card-title text-capitalize"></h2>
+                        <h6 class="card-text text-white text-capitalize"></h6>
+                        <p class="card-text"></p>
+                        <a href="" class="link-detail">View Detail</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-end text-dark">
+            <a href="list.html">View All..</a>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="journey-plan" class="pt-5">
+        <div class="container pt-5">
+          <h1
+            class="mt-5 section-title fw-semibold text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Mari Melihat <br />
+            Berbagai Macam UMKM
+          </h1>
+          <div
+            id="product-row"
+            class="row row-cols-1 row-cols-md-3 mb-3 mt-5 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <!-- Produk akan di-generate di sini -->
+          </div>
+          <div class="text-end text-dark">
+            <a href="list.html">View All..</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- {{-- End Journey Plan --}} -->
+
+      <!-- {{-- Contact --}} -->
+      <section id="contact" class="pt-5">
+        <div class="container px-4 py-5">
+          <h1
+            class="mt-5 section-title fw-semibold text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Atau Ingin Informasi Lebih Lanjut <br />Kontak Kami
+          </h1>
+
+          <div
+            class="row row-cols-1 flex-column-reverse flex-md-row row-cols-md-2 align-items-md-center g-5 py-5"
+          >
+            <div class="col d-flex flex-column align-items-start gap-2">
+              <img src="img/hero3.jpg" class="contact-img" alt="" />
+            </div>
+
+            <div class="col">
+              <!-- {{--
+              <div class="row row-cols-1 row-cols-sm-2 g-4">
+                <div class="col d-flex flex-column gap-2">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                  >
+                    <svg class="bi" width="1em" height="1em">
+                      <use xlink:href="#collection" />
+                    </svg>
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">
+                    Featured title
+                  </h4>
+                  <p class="text-body-secondary">
+                    Paragraph of text beneath the heading to explain the
+                    heading.
+                  </p>
+                </div>
+
+                <div class="col d-flex flex-column gap-2">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                  >
+                    <svg class="bi" width="1em" height="1em">
+                      <use xlink:href="#gear-fill" />
+                    </svg>
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">
+                    Featured title
+                  </h4>
+                  <p class="text-body-secondary">
+                    Paragraph of text beneath the heading to explain the
+                    heading.
+                  </p>
+                </div>
+
+                <div class="col d-flex flex-column gap-2">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                  >
+                    <svg class="bi" width="1em" height="1em">
+                      <use xlink:href="#speedometer" />
+                    </svg>
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">
+                    Featured title
+                  </h4>
+                  <p class="text-body-secondary">
+                    Paragraph of text beneath the heading to explain the
+                    heading.
+                  </p>
+                </div>
+
+                <div class="col d-flex flex-column gap-2">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                  >
+                    <svg class="bi" width="1em" height="1em">
+                      <use xlink:href="#table" />
+                    </svg>
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">
+                    Featured title
+                  </h4>
+                  <p class="text-body-secondary">
+                    Paragraph of text beneath the heading to explain the
+                    heading.
+                  </p>
+                </div>
+              </div>
+              --}} -->
+              <form action="">
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Name :</label>
+                  <input type="text" class="form-control" id="nama" />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Example textarea</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <button type="submit" class="button">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- {{-- End Contact --}} -->
+    </main>
+
+    <footer
+      style="
+        background-color: #043442;
+        height: fit-content;
+        margin-top: 300px;
+        padding: 50px 0;
+      "
+      class="text-white"
+    >
+      <div class="container d-flex flex-wrap gap-5">
+        <div class="logo">
+          <img
+            src="{{ asset('img/logo.png') }}"
+            width="100px"
+            class="mt-4"
+            alt=""
+          />
+        </div>
+        <div class="contact mt-4 ms-md-auto">
+          <h4 class="text-white mb-5">Contact Us</h4>
+          <p style="color: #cacaca">
+            <i class="bi bi-telephone me-2"></i> Telp : 081123123123 <br />Senin
+            - Minggu <br />24 Jam
+          </p>
+          <p style="color: #cacaca">
+            <i class="bi bi-geo-alt-fill me-2"></i>Jl. jalan ke Kota Jogja
+            <br />No. 05 Dimana-mana hatiku senang
+          </p>
+          <p style="color: #cacaca">
+            <i class="bi bi-envelope-at-fill me-2"></i>sistysixjourney@gmail.com
+          </p>
+        </div>
+        <div class="pages mt-4 mx-md-4">
+          <h4 class="text-white mb-5">Pages</h4>
+          <a class="text-decoration-none pages-link d-block mt-2" href="#desc"
+            >Description</a
+          >
+          <a
+            class="text-decoration-none pages-link d-block mt-2"
+            href="#discover"
+            >Discover</a
+          >
+          <a class="text-decoration-none pages-link d-block mt-2" href="#exp"
+            >Experience</a
+          >
+          <a
+            class="text-decoration-none pages-link d-block mt-2"
+            href="#journey-plan"
+            >Plan</a
+          >
+          <a
+            class="text-decoration-none pages-link d-block mt-2"
+            href="#contact"
+            >Contact</a
+          >
+        </div>
+        <div class="about mt-4">
+          <h4 class="text-white mb-5">About</h4>
+          <div class="d-flex flex-column" style="max-width: 400px">
+            <p style="color: #cacaca">
+              Welcome to SixtysixJourney, your trusted partner in creating
+              unforgettable travel experiences. We offer personalized
+              itineraries, seamless booking, and 24/7 support to ensure your
+              journey is smooth and memorable. Discover the world with us!
+            </p>
+            <div class="sosial-media d-flex mt-3 gap-3 fs-6">
+              <a href="https://youtube.com" target="blank">
+                <div
+                  class="border border-2 rounded-circle d-flex justify-content-center align-items-center"
+                  style="width: 35px; height: 35px"
+                >
+                  <i class="bi bi-youtube" style="color: #cacaca"></i>
+                </div>
+              </a>
+              <a href="https://instagram.com" target="blank">
+                <div
+                  class="border border-2 rounded-circle d-flex justify-content-center align-items-center"
+                  style="width: 35px; height: 35px"
+                >
+                  <i class="bi bi-instagram" style="color: #cacaca"></i>
+                </div>
+              </a>
+              <a href="https://twitter.com" target="blank">
+                <div
+                  class="border border-2 rounded-circle d-flex justify-content-center align-items-center"
+                  style="width: 35px; height: 35px"
+                >
+                  <i class="bi bi-twitter-x" style="color: #cacaca"></i>
+                </div>
+              </a>
+              <a href="https://tiktok.com" target="blank">
+                <div
+                  class="border border-2 rounded-circle d-flex justify-content-center align-items-center"
+                  style="width: 35px; height: 35px"
+                >
+                  <i class="bi bi-tiktok" style="color: #cacaca"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

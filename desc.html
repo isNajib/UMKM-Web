@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Carousel Example</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      main {
+        margin-top: 100px; /* Sesuaikan dengan tinggi navbar */
+      }
+    </style>
+    <link rel="shortcut icon" href="img/logodark.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="css/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top"
+        id="navbar"
+        style="background-color: #00232e"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="" class="nav-logo" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto w-100 justify-content-center">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main style="margin-top: 80px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div id="detail-container" class="container">
+              <h1 id="detail-title"></h1>
+              <div class="row">
+                <!-- Kolom pertama untuk gambar -->
+
+                <div>
+                  <img
+                    id="detail-image"
+                    src=""
+                    alt=""
+                    class="img-fluid rounded"
+                    style="
+                      max-width: 400px;
+                      height: auto;
+                      display: block;
+                      margin: 0 auto;
+                    "
+                  />
+
+                  <div id="detail-description" class="mt-5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kolom kedua untuk daftar teks -->
+          <div class="col-lg-4">
+            <div class="card p-4 shadow-sm">
+              <h4 class="mb-3">Temukan artikel lain disini</h4>
+
+              <ul id="article-list" class="list-unstyled">
+                <li class="mb-3">
+                  <a
+                    href="desc.html?id=1"
+                    class="text-decoration-none text-dark d-flex align-items-center"
+                  >
+                    Kripik Singkong 1
+                  </a>
+                </li>
+
+                <li class="mb-3">
+                  <a
+                    href="desc.html?id=2"
+                    class="text-decoration-none text-dark d-flex align-items-center"
+                  >
+                    Mutiara Perabot
+                  </a>
+                </li>
+
+                <li class="mb-3">
+                  <a
+                    href="desc.html?id=3"
+                    class="text-decoration-none text-dark d-flex align-items-center"
+                  >
+                    Arbanat (Rambut Nenek)
+                  </a>
+                </li>
+
+                <li class="mb-3">
+                  <a
+                    href="desc.html?id=4"
+                    class="text-decoration-none text-dark d-flex align-items-center"
+                  >
+                    Garam Bricket 3 Mutiara
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      style="
+        background-color: #043442;
+        height: fit-content;
+        margin-top: 300px;
+        padding: 50px 0;
+      "
+      class="text-white"
+    >
+      <div class="container d-flex flex-wrap gap-5">
+        <div class="logo">
+          <img
+            src="{{ asset('img/logo.png') }}"
+            width="100px"
+            class="mt-4"
+            alt=""
+          />
+        </div>
+        <div class="contact mt-4 ms-md-auto">
+          <h4 class="text-white mb-5">Contact Us</h4>
+          <p style="color: #cacaca">
+            <i class="bi bi-telephone me-2"></i> Telp : 081123123123 <br />Senin
+            - Minggu <br />24 Jam
+          </p>
+          <p style="color: #cacaca">
+            <i class="bi bi-geo-alt-fill me-2"></i>Jl. jalan ke Kota Jogja
+            <br />No. 05 Dimana-mana hatiku senang
+          </p>
+          <p style="color: #cacaca">
+            <i class="bi bi-envelope-at-fill me-2"></i>sistysixjourney@gmail.com
+          </p>
+        </div>
+        <div class="pages mt-4 mx-md-4">
+          <h4 class="text-white mb-5">Pages</h4>
+          <a class="text-decoration-none pages-link d-block mt-2" href="#desc"
+            >Description</a
+          >
+          <a
+            class="text-decoration-none pages-link d-block mt-2"
+            href="#discover"
+            >Discover</a
+          >
+          <a class="text-decoration-none pages-link d-block mt-2" href="#exp"
+            >Experience</a
+          >
+          <a
+            class="text-decoration-none pages-link d-block mt-2"
+            href="#journey-plan"
+            >Plan</a
+          >
+          <a
+            class="text-decoration-none pages-link d-block mt-2"
+            href="#contact"
+            >Contact</a
+          >
+        </div>
+        <div class="about mt-4">
+          <h4 class="text-white mb-5">About</h4>
+          <div class="d-flex flex-column" style="max-width: 400px">
+            <p style="color: #cacaca">
+              Welcome to SixtysixJourney, your trusted partner in creating
+              unforgettable travel experiences. We offer personalized
+              itineraries, seamless booking, and 24/7 support to ensure your
+              journey is smooth and memorable. Discover the world with us!
+            </p>
+            <div class="sosial-media d-flex mt-3 gap-3 fs-6">
+              <a href="https://youtube.com" target="blank">
+                <div
+                  class="border border-2 rounded-circle d-flex justify-content-center align-items-center"
+                  style="width: 35px; height: 35px"
+                >
+                  <i class="bi bi-youtube" style="color: #cacaca"></i>
+                </div>
+              </a>
+              <a href="https://instagram.com" target="blank">
+                <div
+                  class="border border-2 rounded-circle d-flex justify-content-center align-items-center"
+                  style="width: 35px; height: 35px"
+                >
+                  <i class="bi bi-instagram" style="color: #cacaca"></i>
+                </div>
+              </a>
+              <a href="https://twitter.com" target="blank">
+                <div
+                  class="border border-2 rounded-circle d-flex justify-content-center align-items-center"
+                  style="width: 35px; height: 35px"
+                >
+                  <i class="bi bi-twitter-x" style="color: #cacaca"></i>
+                </div>
+              </a>
+              <a href="https://tiktok.com" target="blank">
+                <div
+                  class="border border-2 rounded-circle d-flex justify-content-center align-items-center"
+                  style="width: 35px; height: 35px"
+                >
+                  <i class="bi bi-tiktok" style="color: #cacaca"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // Ambil parameter ID dari URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = parseInt(urlParams.get("id"));
+
+      // Temukan produk berdasarkan ID
+      const selectedProduct = products.find((p) => p.id === productId);
+
+      // Elemen DOM untuk ditampilkan
+      const titleElement = document.getElementById("detail-title");
+      const imageElement = document.getElementById("detail-image");
+      const descriptionElement = document.getElementById("detail-description");
+
+      // Periksa apakah produk ditemukan
+      if (selectedProduct) {
+        // Isi data pada elemen HTML
+        titleElement.textContent = selectedProduct.name;
+        imageElement.src = selectedProduct.image;
+        imageElement.alt = selectedProduct.name;
+        descriptionElement.textContent = selectedProduct.description;
+      } else {
+        // Tampilkan pesan jika produk tidak ditemukan
+        document.getElementById("detail-container").innerHTML =
+          "<p>Product not found.</p>";
+      }
+    </script>
+  </body>
+</html>
